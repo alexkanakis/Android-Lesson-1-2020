@@ -9,7 +9,6 @@ public class SavingsAccount extends  Account{
         super(accountNumber, balance);
         this.chargingThreshhold = chargingThreshhold;
     }
-
     @Override
     public double getWithdrawCost(double amount) {
         if(getBalance()> chargingThreshhold){
